@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/index.css">
+    <script src="https://kit.fontawesome.com/69d1526178.js" crossorigin="anonymous"></script>
+    <title>My portfolio</title>
+</head>
+
+<body>
+    <header>
+        <ul id="ul--container" onscroll=scrolling()>
+            <div class="spacer"></div>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        <div id="icon"><a href="javascript:void(0);" onclick=myFunction()><i class="fa-solid fa-bars "></i></a></div>
+    </header>
+    <main>
+        <div id="home">
+            <img src="./Images/background-picture-transformed.png" alt="background-picture">
+            <div class="name">
+                <p>I am <span class="Name">Ashwin Balaji </span></p><br>
+                <p style="font-size: xx-large;">SOFTWARE INTERN @WIZINOA</p>
+            </div>
+            <div class="social--media">
+                <a href="https://github.com/Ashwin15899">
+                    <h2><i class="fa-brands fa-github" style="color: rgb(41, 192, 187);"></i></h2>
+                </a>
+                <a href="https://www.linkedin.com/in/ashwin-balaji-t-s-04017921a/">
+                    <h2><i class="fa-brands fa-linkedin" style="color: rgb(41, 192, 187);"></i></h2>
+                </a>
+                <a href="https://www.instagram.com/ashwinbalaji_1999/">
+                    <h2><i class="fa-brands fa-instagram" style="color: rgb(41, 192, 187);"></i></h2>
+                </a>
+            </div>
+        </div>
+        <div id="about">
+            <div class="about--container">
+                <aside>
+                    <img src="./Images/WhatsApp Image 2023-09-15 at 3.11.34 PM.jpeg" alt="Ashwin">
+                </aside>
+                <section class="section--container">
+                    <div class="section--head">Something about me!</div>
+                    <p class="about--me">To learn new skills and technologies and to get placed in a well reputed
+                        company, so that I
+                        can enhance my capabilities and knowledge.
+                        It's my short term goal and my long term goal is to achive a higher position in that
+                        company
+                    </p><br>
+                    <button class="button"><a href="#contact">Hire me</a></button>
+                </section>
+            </div>
+        </div>
+        <div id="skills">
+            <div class="Skill--container">
+                <div class="skills--head">My skills</div>
+                <div class="skills--content">
+                    <div class="HTML">
+                        <img src="./Images/svg/html-5-svgrepo-com.svg" alt="html">
+                    </div>
+                    <div class="CSS">
+                        <img src="./Images/svg/css-3-svgrepo-com.svg" alt="css">
+                    </div>
+                    <div class="JavaScript">
+                        <img src="./Images/svg/js-svgrepo-com.svg" alt="js">
+                    </div>
+                    <div class="react">
+                        <img src="./Images/svg/react-svgrepo-com.svg" alt="react">
+                    </div>
+                    <div class="nodejs">
+                        <img src="./Images/svg/node-js-svgrepo-com.svg" alt="nodejs">
+                    </div>
+                    <div class="Java">
+                        <img src="./Images/svg/java-logo-svgrepo-com.svg" alt="java">
+                    </div>
+                </div>
+                <hr><br>
+                <div class="tools--head">Tools used</div>
+                <div class="tools--content">
+                    <div class="vscode">
+                        <img src="./Images/svg/vs-code-svgrepo-com.svg" alt="vs-code">
+                    </div>
+                    <div class="eclipse">
+                        <img src="./Images/svg/eclipse-icon-svgrepo-com.svg" alt="eclipse">
+                    </div>
+                    <div class="github">
+                        <img src="./Images/svg/github-142-svgrepo-com.svg" alt="github">
+                    </div>
+                </div>
+                <hr><br>
+                <div class="db--head">Database</div>
+                <div class="db--content">
+                    <div class="mysql">
+                        <img src="./Images/svg/mysql-logo-svgrepo-com.svg" alt="mysql">
+                    </div>
+                    <div class="MongoDB">
+                        <img src="./Images/svg/mongodb-icon.svg" alt="MongoDB">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="contact--container">
+                <div class="contact--head">CONTACT NOW!</div>
+                <div class="contact--content">
+                    <form>
+                        <input type="text" id="name" placeholder="Name"><br><br>
+                        <input type="email" id="Mail" placeholder="email"><br><br>
+                        <input type="text" id="subject" placeholder="Subject"><br><br>
+                        <textarea id="text-area" cols="70" rows="10" placeholder="Message"></textarea><br><br>
+                        <button class="button">Send Message</button>
+                    </form>
+                    <ul class="contact--list">
+                        <li class="address"><i class="fa-solid fa-location-dot" style="color: whitesmoke;"></i>
+                            <b>Address :</b><br><span>Madurai, Tamil Nadu</span>
+                        </li>
+                        <li class="email"><i class="fa-solid fa-envelope" style="color: whitesmoke;"></i> <b>Email :</b>
+                            <br><span>tsashwinbalaji15899</span>
+                        </li>
+                        <li class="mobile"><i class="fa-solid fa-mobile" style="color: whitesmoke;"></i> <b>Phone :
+                            </b><br><span>+91 8248664879</span> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Designed by :- Ashwin Balaji</p>
+    </footer>
+    <script>
+        // function scrolling() {
+        //     document.getElementById("ul--container").style.backgroundColor=black;
+        // }
+        function myFunction() {
+            var element = document.getElementById("ul--container");
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
